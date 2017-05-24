@@ -27,7 +27,7 @@ ADD config/nginx-default.conf /etc/nginx/sites-available/default
 ADD config/php.ini /etc/php5/fpm/php.ini
 
 RUN cd /usr/share/nginx/html && \
-    export PIWIK_VERSION=2.16.2 && \
+    export PIWIK_VERSION=3.0.4 && \
     wget http://builds.piwik.org/piwik-${PIWIK_VERSION}.tar.gz && \
     tar -xzf piwik-${PIWIK_VERSION}.tar.gz && \
     rm piwik-${PIWIK_VERSION}.tar.gz && \
